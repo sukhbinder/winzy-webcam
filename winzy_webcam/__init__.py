@@ -22,7 +22,7 @@ def get_filename_as_current_time():
 
 
 def get_image(filename):
-    cap = imageio.get_reader("")
+    cap = imageio.get_reader("<video0>")
     # Capture frame-by-frame
     frame = cap.get_next_data()
     # Save the image to a file
