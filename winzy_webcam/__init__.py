@@ -45,7 +45,7 @@ class HelloWorld:
     @winzy.hookimpl
     def register_commands(self, subparser):
         parser = create_parser(subparser)
-        parser.set_defaults(func=self.hello)
+        parser.set_defaults(func=self.webcam)
 
     def webcam(self, args):
         get_image(os.path.join(args.path, get_filename_as_current_time()))
